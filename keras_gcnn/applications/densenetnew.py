@@ -14,8 +14,8 @@ from __future__ import division
 from __future__ import print_function
 
 import keras.backend as K
-from keras.applications.imagenet_utils import _obtain_input_shape
-from keras.applications.imagenet_utils import preprocess_input as _preprocess_input
+from keras_applications.imagenet_utils import _obtain_input_shape
+from keras_applications.imagenet_utils import preprocess_input as _preprocess_input
 from keras.engine.topology import get_source_inputs
 from keras.layers import Activation
 from keras.layers import AveragePooling2D
@@ -33,7 +33,7 @@ from keras.layers import UpSampling2D
 from keras.layers import concatenate
 from keras.models import Model
 from keras.regularizers import l2
-from keras_contrib.layers.convolutional import SubPixelUpscaling
+from keras_contrib.layers.convolutional.subpixelupscaling import SubPixelUpscaling
 
 from keras_gcnn.layers import GConv2D, GBatchNorm
 from keras_gcnn.layers.pooling import GroupPool
